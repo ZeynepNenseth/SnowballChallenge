@@ -1,0 +1,9 @@
+.filteredtable tbody tr,
+.tablefilter{
+    display:none;
+}
+#area.tablefilter:checked ~ table tbody tr.area,
+#vegetables.tablefilter:checked ~ table tbody tr.vegetables,
+#fruits.tablefilter:checked ~ table tbody tr.fruits {
+    display:table-row;
+}
