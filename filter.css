@@ -17,3 +17,4 @@
 .tablefilter:checked + label{
     background-color: #111;
 }
+/* dette er ikke relevant om man ikke bruker det som er kommentert ut i buysell.*/

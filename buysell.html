@@ -15,7 +15,7 @@
 
 <h2>Buy</h2>
 
-<input type="checkbox" class="tablefilter" name="area" id="area" checked />
+<!--<input type="checkbox" class="tablefilter" name="area" id="area" checked />
 <label for="area">Area</label>                
 <input type="checkbox" class="tablefilter" name="vegetables" id="vegetables" checked />
 <label for="vegetables">Vegetables</label>        
@@ -44,16 +44,100 @@
             <td>Plums</td>
             <td>Berries</td>
         </tr>
-</table> 
+</table> -->
+
+<!--eller man kan prøve dropdown choose fra w3schools
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_optgroup
+-->
+<p>The select element is used to create a drop-down list.</p>
+
+<form action="/action_page.php">
+  <label for="area">Choose your area:</label>
+  <select name="area" id="area">
+    <option value="oslo">Oslo</option>
+    <option value="bergen">Bergen</option>
+    <option value="trondheim">Trondheim</option>
+    <option value="kristiansand">Kristiansand</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<!--<p>The optgroup tag is used to group related options in a drop-down list:</p>-->
+
+<form action="/action_page.php">
+  <label for="farmer">Choose your farmer:</label>
+  <select name="farmer" id="farmer">
+    <optgroup label="Oslo area">
+      <option value="sagene">Sagene paradishage</option>
+      <option value="lørenskog">Annes bakgård</option>
+      <option value="gammlebyen">Gamlebyen dyrkekasse</option>
+    </optgroup>
+    <optgroup label="Bergen area">
+      <option value="bergenhus">Bergenhus lillehage</option>
+      <option value="stølen">Oles hage</option>
+    </optgroup>
+    <optgroup label="Trondheim area">
+        <option value="heimdal">Grønt hus</option>
+        <option value="østbyen">Grønne fingre</option>
+      </optgroup>
+    <optgroup label="Kristiansand area">
+       <option value="gimlekollen">Krydderhage</option>
+       <option value="sentrum">Kollektiv grønnsaker</option> 
+       <option value="lund">Lund eppleparadis</option>
+       <option value="grim">Evens grønne fristelser</option>
+    </optgroup>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<form action="/action_page.php">
+    <label for="vegi">Choose your vegetable:</label>
+    <select name="vegi" id="vegi">
+      <option value="potatos">Potatos</option>
+      <option value="green peas">Green peas</option>
+      <option value="carrots">Carrots</option>
+      <option value="red beets">Red beets</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+
+  <form action="/action_page.php">
+    <label for="fruit">Choose your fruit:</label>
+    <select name="fruit" id="fruit">
+      <option value="apples">Apples</option>
+      <option value="pears">Pears</option>
+      <option value="plums">Plums</option>
+      <option value="berries">Berries</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
+
 
 <h2>Sell</h2>
+<h2>Create sell listing</h2>
+<!--man må vel først logge inn for å kunne fylle info?
+https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_checkbox-->
 
+<p>Please sign up/sign in first!</p>
     <form>
-        <input id="e-mail or username" type="e-mail" placeholder="E-mail or username" required><br>
-        <input id="username" type="text" placeholder="Username" required><br>
-        <input id="password" type="text" placeholder="Password" required><br>
-        <input id="confirm" type="text" placeholder="Confirm password" required><br>
-        <input type="submit" placeholder="Send">
+        <input id="product" type="text" placeholder="Product" required><br>
+        <input id="desc" type="text" placeholder="Description" required><br>
+        <input id="pay" type="text" placeholder="Prefered payment method" required><br>
+        <input id="transport" type="text" placeholder="Prefered transport method" required><br>
+        <input type="checkbox" id="add" name="add" value="add1">
+        <label for="add"> Add to my listing</label><br>
+        <input type="checkbox" id="add-new" name="add-new" value="add2">
+        <label for="add-new">Add to my listing and create a new product</label><br>
+        <input type="submit" value="Submit"><!--value eller placeholder?-->
     </form>
 
 
