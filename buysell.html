@@ -11,89 +11,112 @@
 </head>
 
 <body>
-<h1>Your Space to Buy or Sell Products</h1>
 
-<h2>Buy</h2>
+  <div id="header">
+    <h1>The Online Garden Farmer's Market</h1>
+    <h2>
+      Grow local<br \>
+      Buy local<br \>
+      Support your community
+    </h2>
+    <img src="img\farmer.jpg" alt="bilde farmer">
+  </div>
 
-<!--<input type="checkbox" class="tablefilter" name="area" id="area" checked />
-<label for="area">Area</label>                
-<input type="checkbox" class="tablefilter" name="vegetables" id="vegetables" checked />
-<label for="vegetables">Vegetables</label>        
-<input type="checkbox" class="tablefilter" name="fruits" id="fruits" checked />
-<label for="fruits">Fruits</label>
+  <div id="navbar">
+    <ul>
+      <a href="index.html"><div class="navbar_button"><li>Home</li></div></a>
+      <a href="recipes.html"><div class="navbar_button"><li>Recipes</li></div></a>
+      <a href="buysell.html"><div class="navbar_button"><li>Buy/Sell</li></div></a>
+      <a href="forum.html"><div class="navbar_button"><li>Forum</li></div></a>
+      <a href="sign.html"><div class="navbar_button"><li>Sign up/Sign in</li></div></a>
+      <a href="#about"><div class="navbar_button"><li>About us</li></div></a>
+      <a href="#contact"><div class="navbar_button"><li>Contact</li></div></a>
+    </ul> 
+  </div>
+    
+  <h1>Your Space to Buy or Sell Products</h1>
 
-<table class="table table-bordered table-striped filteredtable">
+  <h2>Buy</h2>
+
+  <!--<input type="checkbox" class="tablefilter" name="area" id="area" checked />
+  <label for="area">Area</label>                
+  <input type="checkbox" class="tablefilter" name="vegetables" id="vegetables" checked />
+  <label for="vegetables">Vegetables</label>        
+  <input type="checkbox" class="tablefilter" name="fruits" id="fruits" checked />
+  <label for="fruits">Fruits</label>
+
+  <table class="table table-bordered table-striped filteredtable">
     <th>
 
     </th>
-        <tr class="area">
-            <td>Oslo</td>
-            <td>Bergen</td>
-            <td>Kristiansand</td>
-            <td>Trondheim</td>
-        </tr>
-        <tr class="vegetables">
-            <td>Potatos</td>
-            <td>Tomatos</td>
-            <td>Red beets</td>
-            <td>Carrots</td>
-        </tr>
-        <tr class="fruits">
-            <td>Apples</td>
-            <td>Pears</td>
-            <td>Plums</td>
-            <td>Berries</td>
-        </tr>
-</table> -->
+    <tr class="area">
+        <td>Oslo</td>
+        <td>Bergen</td>
+        <td>Kristiansand</td>
+        <td>Trondheim</td>
+    </tr>
+    <tr class="vegetables">
+        <td>Potatos</td>
+        <td>Tomatos</td>
+        <td>Red beets</td>
+        <td>Carrots</td>
+    </tr>
+    <tr class="fruits">
+        <td>Apples</td>
+        <td>Pears</td>
+        <td>Plums</td>
+        <td>Berries</td>
+    </tr>
+  </table> -->
 
-<!--eller man kan prøve dropdown choose fra w3schools
-https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select
-https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_optgroup
--->
-<p>The select element is used to create a drop-down list.</p>
+  <!--eller man kan prøve dropdown choose fra w3schools
+  https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select
+  https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_optgroup
+  -->
+  <p>The select element is used to create a drop-down list.</p>
 
-<form action="/action_page.php">
-  <label for="area">Choose your area:</label>
-  <select name="area" id="area">
-    <option value="oslo">Oslo</option>
-    <option value="bergen">Bergen</option>
-    <option value="trondheim">Trondheim</option>
-    <option value="kristiansand">Kristiansand</option>
-  </select>
-  <br><br>
-  <input type="submit" value="Submit">
-</form>
+  <form action="/action_page.php">
+    <label for="area">Choose your area:</label>
+    <select name="area" id="area">
+      <option value="oslo">Oslo</option>
+      <option value="bergen">Bergen</option>
+      <option value="trondheim">Trondheim</option>
+      <option value="kristiansand">Kristiansand</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
 
-<!--<p>The optgroup tag is used to group related options in a drop-down list:</p>-->
+  <!--<p>The optgroup tag is used to group related options in a drop-down list:</p>-->
 
-<form action="/action_page.php">
-  <label for="farmer">Choose your farmer:</label>
-  <select name="farmer" id="farmer">
-    <optgroup label="Oslo area">
-      <option value="sagene">Sagene paradishage</option>
-      <option value="lørenskog">Annes bakgård</option>
-      <option value="gammlebyen">Gamlebyen dyrkekasse</option>
-    </optgroup>
-    <optgroup label="Bergen area">
-      <option value="bergenhus">Bergenhus lillehage</option>
-      <option value="stølen">Oles hage</option>
-    </optgroup>
-    <optgroup label="Trondheim area">
-        <option value="heimdal">Grønt hus</option>
-        <option value="østbyen">Grønne fingre</option>
+  <form action="/action_page.php">
+    <label for="farmer">Choose your farmer:</label>
+    <select name="farmer" id="farmer">
+      <optgroup label="Oslo area">
+        <option value="sagene">Sagene paradishage</option>
+        <option value="lørenskog">Annes bakgård</option>
+        <option value="gammlebyen">Gamlebyen dyrkekasse</option>
       </optgroup>
-    <optgroup label="Kristiansand area">
-       <option value="gimlekollen">Krydderhage</option>
-       <option value="sentrum">Kollektiv grønnsaker</option> 
-       <option value="lund">Lund eppleparadis</option>
-       <option value="grim">Evens grønne fristelser</option>
-    </optgroup>
-  </select>
-  <br><br>
-  <input type="submit" value="Submit">
-</form>
+      <optgroup label="Bergen area">
+        <option value="bergenhus">Bergenhus lillehage</option>
+        <option value="stølen">Oles hage</option>
+      </optgroup>
+      <optgroup label="Trondheim area">
+          <option value="heimdal">Grønt hus</option>
+          <option value="østbyen">Grønne fingre</option>
+        </optgroup>
+      <optgroup label="Kristiansand area">
+        <option value="gimlekollen">Krydderhage</option>
+        <option value="sentrum">Kollektiv grønnsaker</option> 
+        <option value="lund">Lund eppleparadis</option>
+        <option value="grim">Evens grønne fristelser</option>
+      </optgroup>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
 
-<form action="/action_page.php">
+  <form action="/action_page.php">
     <label for="vegi">Choose your vegetable:</label>
     <select name="vegi" id="vegi">
       <option value="potatos">Potatos</option>
@@ -106,40 +129,65 @@ https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_optgroup
   </form>
 
 
-  <form action="/action_page.php">
-    <label for="fruit">Choose your fruit:</label>
-    <select name="fruit" id="fruit">
-      <option value="apples">Apples</option>
-      <option value="pears">Pears</option>
-      <option value="plums">Plums</option>
-      <option value="berries">Berries</option>
-    </select>
-    <br><br>
-    <input type="submit" value="Submit">
-  </form>
-
-<p>Click the "Submit" button and the form-data will be sent to a page on the 
-server called "action_page.php".</p>
-
-
-<h2>Sell</h2>
-<h2>Create sell listing</h2>
-<!--man må vel først logge inn for å kunne fylle info?
-https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_checkbox-->
-
-<p>Please sign up/sign in first!</p>
-    <form>
-        <input id="product" type="text" placeholder="Product" required><br>
-        <input id="desc" type="text" placeholder="Description" required><br>
-        <input id="pay" type="text" placeholder="Prefered payment method" required><br>
-        <input id="transport" type="text" placeholder="Prefered transport method" required><br>
-        <input type="checkbox" id="add" name="add" value="add1">
-        <label for="add"> Add to my listing</label><br>
-        <input type="checkbox" id="add-new" name="add-new" value="add2">
-        <label for="add-new">Add to my listing and create a new product</label><br>
-        <input type="submit" value="Submit"><!--value eller placeholder?-->
+    <form action="/action_page.php">
+      <label for="fruit">Choose your fruit:</label>
+      <select name="fruit" id="fruit">
+        <option value="apples">Apples</option>
+        <option value="pears">Pears</option>
+        <option value="plums">Plums</option>
+        <option value="berries">Berries</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
     </form>
 
+  <p>Click the "Submit" button and the form-data will be sent to a page on the 
+  server called "action_page.php".</p>
+
+
+  <h2>Sell</h2>
+  <h2>Create sell listing</h2>
+  <!--man må vel først logge inn for å kunne fylle info?
+  https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_checkbox-->
+
+  <p>Please sign up/sign in first!</p>
+  <form>
+      <input id="product" type="text" placeholder="Product" required><br>
+      <input id="desc" type="text" placeholder="Description" required><br>
+      <input id="pay" type="text" placeholder="Prefered payment method" required><br>
+      <input id="transport" type="text" placeholder="Prefered transport method" required><br>
+      <input type="checkbox" id="add" name="add" value="add1">
+      <label for="add"> Add to my listing</label><br>
+      <input type="checkbox" id="add-new" name="add-new" value="add2">
+      <label for="add-new">Add to my listing and create a new product</label><br>
+      <input type="submit" value="Submit"><!--value eller placeholder?-->
+  </form>
+
+  <div id="about">
+    <h2>About Us</h2>
+    <p>
+        The Online Garden Farmer`s Market was established in 2015 in Oslo by a few hobby gardners to support 
+        a green environment and connect people in their community. Since then it has grown to other communities 
+        connecting people with locally produced products and contributing to a greener climate.
+    </p>
+
+    <p>
+        Join us in our mission!
+    </p>
+  </div>
+
+  <div id="contact">
+      <h2 id="contact">Contact</h2>
+      <p>If you have any questions, please reach us by phone or e-mail:</p>
+      <p>Phone: +47 00 00 00 Mon-Fri 9 am-3 pm</p>
+      <p>E-mail: post@onlinegarden.com</p>
+  </div>
+
+  <div id="footer">
+      <footer>
+          <p><strong>The Online Garden Farmer`s Market &copy; 2020. All rights reserved.</strong></p>
+      </footer>
+  </div>
 
 </body>
 

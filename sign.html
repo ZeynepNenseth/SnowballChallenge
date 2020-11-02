@@ -7,29 +7,80 @@
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
     </head>
 
-    <body>
-        <!--the same img from the main page-->
-        <h1>Sign up here</h1> <!--venstre side av skjermen-->
-        <div class="contact-wrapper">
-            <form>
-                <input id="first name" type="text" placeholder="First name" required>
-                <input id="last name" type="text" placeholder="Last Name" required><br>
-                <input id="e-mail" type="e-mail" placeholder="E-mail" required><br>
-                <input id="username" type="text" placeholder="Username" required><br>
-                <input id="password" type="text" placeholder="Password" required><br>
-                <input id="confirm" type="text" placeholder="Confirm password" required><br>
-                <input type="submit" placeholder="Send">
-            </form>
-        </div>
+<body>
 
-            <h1>Sign in here</h1> <!--høyre side av skjermen-->
-            <div class="contact-wrapper">
-                <form>
-                    <input id="email or username" type="e-mail" placeholder="E-mail or username" required><br>
-                    <input id="password" type="text" placeholder="Password" required><br>
-                    <br>
-                    <input type="submit" placeholder="Send">
-                </form>
-        </div>
-    </body>
+    <div id="header">
+        <h1>The Online Garden Farmer's Market</h1>
+        <h2>
+          Grow local<br \>
+          Buy local<br \>
+          Support your community
+        </h2>
+        <img src="img\farmer.jpg" alt="bilde farmer">
+    </div>
+    
+    <div id="navbar">
+        <ul>
+          <a href="index.html"><div class="navbar_button"><li>Home</li></div></a>
+          <a href="recipes.html"><div class="navbar_button"><li>Recipes</li></div></a>
+          <a href="buysell.html"><div class="navbar_button"><li>Buy/Sell</li></div></a>
+          <a href="forum.html"><div class="navbar_button"><li>Forum</li></div></a>
+          <a href="sign.html"><div class="navbar_button"><li>Sign up/Sign in</li></div></a>
+          <a href="#about"><div class="navbar_button"><li>About us</li></div></a>
+          <a href="#contact"><div class="navbar_button"><li>Contact</li></div></a>
+        </ul> 
+    </div>
+
+    <!--the same img from the main page-->
+    <h1>Sign up here</h1> <!--venstre side av skjermen-->
+    <div class="contact-wrapper">
+        <form>
+            <input id="first name" type="text" placeholder="First name" required>
+            <input id="last name" type="text" placeholder="Last Name" required><br>
+            <input id="e-mail" type="e-mail" placeholder="E-mail" required><br>
+            <input id="username" type="text" placeholder="Username" required><br>
+            <input id="password" type="text" placeholder="Password" required><br>
+            <input id="confirm" type="text" placeholder="Confirm password" required><br>
+            <input type="submit" placeholder="Send">
+        </form>
+    </div>
+
+    <h1>Sign in here</h1> <!--høyre side av skjermen-->
+    <div class="contact-wrapper">
+        <form>
+            <input id="email or username" type="e-mail" placeholder="E-mail or username" required><br>
+            <input id="password" type="text" placeholder="Password" required><br>
+            <br>
+            <input type="submit" placeholder="Send">
+        </form>
+    </div>
+
+    <div id="about">
+        <h2>About Us</h2>
+        <p>
+            The Online Garden Farmer`s Market was established in 2015 in Oslo by a few hobby gardners to support 
+            a green environment and connect people in their community. Since then it has grown to other communities 
+            connecting people with locally produced products and contributing to a greener climate.
+        </p>
+    
+        <p>
+            Join us in our mission!
+        </p>
+    </div>
+    
+    <div id="contact">
+        <h2 id="contact">Contact</h2>
+        <p>If you have any questions, please reach us by phone or e-mail:</p>
+        <p>Phone: +47 00 00 00 Mon-Fri 9 am-3 pm</p>
+        <p>E-mail: post@onlinegarden.com</p>
+    </div>
+
+    <div id="footer">
+        <footer>
+            <p><strong>The Online Garden Farmer`s Market &copy; 2020. All rights reserved.</strong></p>
+        </footer>
+    </div>
+
+</body>
+
 </html>
