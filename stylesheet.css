@@ -7,3 +7,109 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+#header {
+    width: 100%;
+    height: 350px;
+    background-color: #92c21e;
+    color: whitesmoke;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+#header > h1 {
+    margin: 40px 0px 10px 40px;
+    font-size: 38pt;
+}
+#header > h2 {
+    margin: 0px 0px 20px 70px;
+    font-size: 24pt;
+}
+
+#navbar {
+    width: 100%;
+    font-size: 16pt;
+    margin-top: 350px;
+    background-color: #7d5026;
+    font-weight: bold;
+    /*position: -webkit-sticky; /* For Safari users */
+    /*position: sticky;
+    top: 0;*/
+    z-index: 0;
+
+}
+#navbar > ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+#navbar > ul > a > .navbar_button > li {
+    text-align: center;
+}
+#navbar > ul > a:link {
+    width: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+    color: whitesmoke;
+}
+#navbar > ul > a:visited {
+    color: whitesmoke;
+}
+#navbar > ul > a:hover {
+    color: orange;
+}
+#navbar > ul > a:active {
+    background-color: #64401f;
+}
+
+#content-wrapper {
+    width: 100%;
+    background-color: white;
+    padding-top: 40px;
+}
+#content-wrapper > h2 {
+    text-align: center;
+    margin-top: 20px;
+    width: 60%;
+    margin: auto;
+    border-bottom: 3px solid #92c21e;
+    font-size: 20pt;
+}
+#content-wrapper > h3 {
+    width: 60%;
+    margin: 10px auto;
+    font-size: 16pt;
+}
+#content-wrapper > p {
+    width: 60%;
+    margin: 0px auto 60px auto;
+    font-size: 15pt;
+}
+#content-wrapper > p > .img_left {
+    float: left;
+    margin-right: 10px;
+}
+#content-wrapper > p > .img_right {
+    float: right;
+    margin-left: 10px;
+}
+
+
+#about_contact_footer-wrapper {
+    background-color: #7d5026;
+    border-top: 10px solid #92c21e;
+    color: whitesmoke;
+    display: flex;
+    flex-flow: row wrap;
+}
+#about_contact_footer-wrapper > #about,
+#about_contact_footer-wrapper > #contact {
+    width: 50%;
+    padding: 25px;
+    text-align: center;
+}
+#about_contact_footer-wrapper > #footer {
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+}
