@@ -38,38 +38,6 @@
 
   <h2>Buy</h2>
 
-  <!--<input type="checkbox" class="tablefilter" name="area" id="area" checked />
-  <label for="area">Area</label>                
-  <input type="checkbox" class="tablefilter" name="vegetables" id="vegetables" checked />
-  <label for="vegetables">Vegetables</label>        
-  <input type="checkbox" class="tablefilter" name="fruits" id="fruits" checked />
-  <label for="fruits">Fruits</label>
-
-  <table class="table table-bordered table-striped filteredtable">
-    <th>
-
-    </th>
-    <tr class="area">
-        <td>Oslo</td>
-        <td>Bergen</td>
-        <td>Kristiansand</td>
-        <td>Trondheim</td>
-    </tr>
-    <tr class="vegetables">
-        <td>Potatos</td>
-        <td>Tomatos</td>
-        <td>Red beets</td>
-        <td>Carrots</td>
-    </tr>
-    <tr class="fruits">
-        <td>Apples</td>
-        <td>Pears</td>
-        <td>Plums</td>
-        <td>Berries</td>
-    </tr>
-  </table> -->
-
-  <!--eller man kan prøve dropdown choose fra w3schools
   https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select
   https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_optgroup
   -->
@@ -78,6 +46,7 @@
   <form action="/action_page.php">
     <label for="area">Choose your area:</label>
     <select name="area" id="area">
+      <option value="oslo">Select here</option>
       <option value="oslo">Oslo</option>
       <option value="bergen">Bergen</option>
       <option value="trondheim">Trondheim</option>
@@ -92,6 +61,7 @@
   <form action="/action_page.php">
     <label for="farmer">Choose your farmer:</label>
     <select name="farmer" id="farmer">
+        <option value="sagene">Select here</option>
       <optgroup label="Oslo area">
         <option value="sagene">Sagene paradishage</option>
         <option value="lørenskog">Annes bakgård</option>
@@ -119,6 +89,7 @@
   <form action="/action_page.php">
     <label for="vegi">Choose your vegetable:</label>
     <select name="vegi" id="vegi">
+      <option value="potatos">Select here</option>
       <option value="potatos">Potatos</option>
       <option value="green peas">Green peas</option>
       <option value="carrots">Carrots</option>
@@ -132,6 +103,7 @@
     <form action="/action_page.php">
       <label for="fruit">Choose your fruit:</label>
       <select name="fruit" id="fruit">
+        <option value="apples">Select here</option>
         <option value="apples">Apples</option>
         <option value="pears">Pears</option>
         <option value="plums">Plums</option>
