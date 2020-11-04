@@ -66,12 +66,17 @@ body{
     width: 100%;
     background-color: white;
     padding-top: 40px;
+    margin-bottom: 20px;
+}
+#content-wrapper > h1 {
+    text-align: center;
+    width: 60%;
+    margin: 20px auto 0 auto;
 }
 #content-wrapper > h2 {
     text-align: center;
-    margin-top: 20px;
     width: 60%;
-    margin: auto;
+    margin: 20px auto 0 auto;
     border-bottom: 3px solid #92c21e;
     font-size: 20pt;
 }
@@ -112,4 +117,72 @@ body{
     width: 100%;
     padding: 25px;
     text-align: center;
+}
+
+#recipes_navbar {
+    width: 60%;
+    font-size: 14pt;
+    background-color: #92c21e;
+    margin: 0 auto;
+}
+#recipes_navbar > ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+#recipes_navbar > ul > a > .navbar_button > li {
+    text-align: center;
+}
+#recipes_navbar > ul > a:link {
+    width: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+    color: whitesmoke;
+}
+#recipes_navbar > ul > a:visited {
+    color: whitesmoke;
+}
+#recipes_navbar > ul > a:hover {
+    color: #7d5026;
+    font-weight: bold;
+}
+#recipes_navbar > ul > a:active {
+    background-color: #64401f;
+    color: whitesmoke;
+}
+
+#content-wrapper > table {
+    width: 60%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    font-size: 15pt;
+}
+#content-wrapper > table th {
+    border-bottom: 2px solid #7d5026;
+    text-align: start;
+    padding: 5px;
+}
+#content-wrapper > table td {
+    padding: 5px;
+}
+
+#content-wrapper > ol {
+    font-size: 15pt;
+    width: 60%;
+    margin: auto;
+}
+#content-wrapper > ol li {
+    padding: 3px 0;
+    margin-left: 25px;
+}
+
+#content-wrapper > .recipe_title {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 17pt;
+}
+
+#content-wrapper > #recipes_intro {
+    text-align: justify;
+    margin: 20px auto 30px auto;
 }
