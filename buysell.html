@@ -28,137 +28,217 @@
       <a href="recipes.html"><div class="navbar_button"><li>Recipes</li></div></a>
       <a href="buysell.html"><div class="navbar_button"><li>Buy/Sell</li></div></a>
       <a href="forum.html"><div class="navbar_button"><li>Forum</li></div></a>
-      <a href="sign.html"><div class="navbar_button"><li>Sign up/Sign in</li></div></a>
+      <a href="sign.html"><div class="navbar_button"><li>Log in/Sign up</li></div></a>
       <a href="#about"><div class="navbar_button"><li>About us</li></div></a>
       <a href="#contact"><div class="navbar_button"><li>Contact</li></div></a>
     </ul> 
   </div>
+
+  <div id="content-wrapper_buysell">   
+    <h1>Your Space to Buy or Sell Products</h1>
+
+    <!--https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select
+    https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_optgroup
     
-  <h1>Your Space to Buy or Sell Products</h1>
+    <p>The select element is used to create a drop-down list.</p>-->
+    <div id="buy">
+      <h2>Buy</h2>
+      <h3>Buy a product - recent listings:</h3>
+      <p>
+        Use the filter function to filter for area, type of product, price, and more.
+        (Filter button doesn't work, a search function like that and buy listings like these
+        would require databases and other stuff outside our skill level. However, this is what it
+        would look like. The links in the table don't go anywhere either.
+        The inputs available in the sell section might be a little different if everything
+        was fully functional.)
+      </p>
+      
+      <p><button>Filters</button>Active filters: None</p>
 
-  <h2>Buy</h2>
-
-  https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select
-  https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_optgroup
-  -->
-  <p>The select element is used to create a drop-down list.</p>
-
-  <form action="/action_page.php">
-    <label for="area">Choose your area:</label>
-    <select name="area" id="area">
-      <option value="oslo">Select here</option>
-      <option value="oslo">Oslo</option>
-      <option value="bergen">Bergen</option>
-      <option value="trondheim">Trondheim</option>
-      <option value="kristiansand">Kristiansand</option>
-    </select>
-    <br><br>
-    <input type="submit" value="Submit">
-  </form>
-
-  <!--<p>The optgroup tag is used to group related options in a drop-down list:</p>-->
-
-  <form action="/action_page.php">
-    <label for="farmer">Choose your farmer:</label>
-    <select name="farmer" id="farmer">
-        <option value="sagene">Select here</option>
-      <optgroup label="Oslo area">
-        <option value="sagene">Sagene paradishage</option>
-        <option value="lørenskog">Annes bakgård</option>
-        <option value="gammlebyen">Gamlebyen dyrkekasse</option>
-      </optgroup>
-      <optgroup label="Bergen area">
-        <option value="bergenhus">Bergenhus lillehage</option>
-        <option value="stølen">Oles hage</option>
-      </optgroup>
-      <optgroup label="Trondheim area">
-          <option value="heimdal">Grønt hus</option>
-          <option value="østbyen">Grønne fingre</option>
-        </optgroup>
-      <optgroup label="Kristiansand area">
-        <option value="gimlekollen">Krydderhage</option>
-        <option value="sentrum">Kollektiv grønnsaker</option> 
-        <option value="lund">Lund eppleparadis</option>
-        <option value="grim">Evens grønne fristelser</option>
-      </optgroup>
-    </select>
-    <br><br>
-    <input type="submit" value="Submit">
-  </form>
-
-  <form action="/action_page.php">
-    <label for="vegi">Choose your vegetable:</label>
-    <select name="vegi" id="vegi">
-      <option value="potatos">Select here</option>
-      <option value="potatos">Potatos</option>
-      <option value="green peas">Green peas</option>
-      <option value="carrots">Carrots</option>
-      <option value="red beets">Red beets</option>
-    </select>
-    <br><br>
-    <input type="submit" value="Submit">
-  </form>
-
-
+      <table id="buy_listings">
+        <tr>
+          <th scope="col">Product</th>
+          <th scope="col">Area</th>
+          <th scope="col">Seller</th>
+          <th scope="col">Price</th>
+        </tr>
+        <tr>
+          <td><a href="#">Tomatoes</a></td>
+          <td><a href="#">Oslo</a></td>
+          <td><a href="#">Ola Hansen</a></td>
+          <td>3,00€/kg</td>
+        </tr>
+        <tr>
+          <td><a href="#">Carrots</a></td>
+          <td><a href="#">Fredrikstad</a></td>
+          <td><a href="#">Line Ødegaard</a></td>
+          <td>1,50€/kg</td>
+        </tr>
+        <tr>
+          <td><a href="#">Examplary product</a></td>
+          <td><a href="#">Examplary area</a></td>
+          <td><a href="#">Examplary seller</a></td>
+          <td>Examplary price</td>
+        </tr>
+        <tr>
+          <td><a href="#">Examplary product</a></td>
+          <td><a href="#">Examplary area</a></td>
+          <td><a href="#">Examplary seller</a></td>
+          <td>Examplary price</td>
+        </tr>
+        <tr>
+          <td><a href="#">Examplary product</a></td>
+          <td><a href="#">Examplary area</a></td>
+          <td><a href="#">Examplary seller</a></td>
+          <td>Examplary price</td>
+        </tr>
+        <tr>
+          <td><a href="#">Examplary product</a></td>
+          <td><a href="#">Examplary area</a></td>
+          <td><a href="#">Examplary seller</a></td>
+          <td>Examplary price</td>
+        </tr>
+      </table>
+      <p><a href="#">Show more rows</a></p>
+    </div>
+    <!--
     <form action="/action_page.php">
-      <label for="fruit">Choose your fruit:</label>
-      <select name="fruit" id="fruit">
-        <option value="apples">Select here</option>
-        <option value="apples">Apples</option>
-        <option value="pears">Pears</option>
-        <option value="plums">Plums</option>
-        <option value="berries">Berries</option>
+      <label for="area">Choose your area:</label>
+      <select name="area" id="area">
+        <option value="oslo">Select here</option>
+        <option value="oslo">Oslo</option>
+        <option value="bergen">Bergen</option>
+        <option value="trondheim">Trondheim</option>
+        <option value="kristiansand">Kristiansand</option>
       </select>
       <br><br>
       <input type="submit" value="Submit">
     </form>
 
-  <p>Click the "Submit" button and the form-data will be sent to a page on the 
-  server called "action_page.php".</p>
+    <!--<p>The optgroup tag is used to group related options in a drop-down list:</p>
+
+    <form action="/action_page.php">
+      <label for="farmer">Choose your farmer:</label>
+      <select name="farmer" id="farmer">
+          <option value="sagene">Select here</option>
+        <optgroup label="Oslo area">
+          <option value="sagene">Sagene paradishage</option>
+          <option value="lørenskog">Annes bakgård</option>
+          <option value="gammlebyen">Gamlebyen dyrkekasse</option>
+        </optgroup>
+        <optgroup label="Bergen area">
+          <option value="bergenhus">Bergenhus lillehage</option>
+          <option value="stølen">Oles hage</option>
+        </optgroup>
+        <optgroup label="Trondheim area">
+            <option value="heimdal">Grønt hus</option>
+            <option value="østbyen">Grønne fingre</option>
+          </optgroup>
+        <optgroup label="Kristiansand area">
+          <option value="gimlekollen">Krydderhage</option>
+          <option value="sentrum">Kollektiv grønnsaker</option> 
+          <option value="lund">Lund eppleparadis</option>
+          <option value="grim">Evens grønne fristelser</option>
+        </optgroup>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <form action="/action_page.php">
+      <label for="vegi">Choose your vegetable:</label>
+      <select name="vegi" id="vegi">
+        <option value="potatos">Select here</option>
+        <option value="potatos">Potatos</option>
+        <option value="green peas">Green peas</option>
+        <option value="carrots">Carrots</option>
+        <option value="red beets">Red beets</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
 
 
-  <h2>Sell</h2>
-  <h2>Create sell listing</h2>
-  <!--man må vel først logge inn for å kunne fylle info?
-  https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_checkbox-->
+      <form action="/action_page.php">
+        <label for="fruit">Choose your fruit:</label>
+        <select name="fruit" id="fruit">
+          <option value="apples">Select here</option>
+          <option value="apples">Apples</option>
+          <option value="pears">Pears</option>
+          <option value="plums">Plums</option>
+          <option value="berries">Berries</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
 
-  <p>Please sign up/sign in first!</p>
-  <form>
-    <input id="product" type="text" placeholder="Product" required><br>
-    <input id="desc" type="text" placeholder="Description" required><br>
-    <input id="pay" type="text" placeholder="Prefered payment method" required><br>
-    <input id="transport" type="text" placeholder="Prefered transport method" required><br>
-    <input type="checkbox" id="add" name="add" value="add1">
-    <label for="add"> Add to my listing</label><br>
-    <input type="checkbox" id="add-new" name="add-new" value="add2">
-    <label for="add-new">Add to my listing and create a new product</label><br>
-    <input type="submit" value="Submit"><!--value eller placeholder?-->
-  </form>
+    <p>Click the "Submit" button and the form-data will be sent to a page on the 
+    server called "action_page.php".</p> -->
 
-  <div id="about">
-    <h2>About Us</h2>
-    <p>
-        The Online Garden Farmer`s Market was established in 2015 in Oslo by a few hobby gardners to support 
-        a green environment and connect people in their community. Since then it has grown to other communities 
-        connecting people with locally produced products and contributing to a greener climate.
-    </p>
+    <div id="sell">
+      <h2>Sell</h2>
+      <h3>Create sell listing</h3>
+      <!--man må vel først logge inn for å kunne fylle info?
+      https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_checkbox-->
 
-    <p>
-        Join us in our mission!
-    </p>
+      <!--<p>Please log in first!</p>-->
+      <form>
+        Product: <input id="product" type="text" required><br>
+        Description: <input id="desc" type="text" required><br>
+        Area: <input id="Area" type="text" required><br>
+        <!--<input id="pay" type="text" placeholder="Prefered payment method" required><br>-->
+        Payment method: 
+        <select name="payment" id="payment">
+          <option value="select">Please select...</option>
+          <option value="cash">Cash</option>
+          <option value="credit">Card</option>
+          <option value="onlinepayment">Online payment</option>
+        </select><br>
+        Transport method: <select name="transport" id="transport">
+          <option value="select">Please select...</option>
+          <option value="pickuppoint">Pick-up point</option>
+          <option value="selfpickup">Buyers visit you</option>
+          <option value="doordelivery">We deliver for you</option>
+        </select><br>
+        <!--<input id="transport" type="text" placeholder="Prefered transport method" required><br>-->
+        <!--<input type="checkbox" id="add" name="add" value="add1">
+        <label for="add"> Add to my listing</label><br>
+        <input type="checkbox" id="add-new" name="add-new" value="add2">
+        <label for="add-new">Add to my listing and create a new product</label><br>-->
+        Note: If you choose to sell with cash, you will not be able to use our
+        delivery system.<br>
+        <input type="submit" value="Submit"><!--value eller placeholder?-->
+        
+      </form>
+    </div>
   </div>
 
-  <div id="contact">
-      <h2 id="contact">Contact</h2>
-      <p>If you have any questions, please reach us by phone or e-mail:</p>
-      <p><strong>Phone:</strong> +47 00 00 00 Mon-Fri 9 am-3 pm</p>
-      <p><strong>E-mail:</strong> post@onlinegarden.com</p>
-  </div>
+  <div id="about_contact_footer-wrapper">
+    <div id="about">
+      <h2>About Us</h2>
+      <p>
+          The Online Garden Farmer's Market was established in 2015 in Oslo by a few hobby gardners to support 
+          a green environment and connect people in their community. Since then it has grown to other communities 
+          connecting people with locally produced products and contributing to a greener climate.
+      </p>
 
-  <div id="footer">
-    <footer>
-      <p><strong>The Online Garden Farmer`s Market &copy; 2020. All rights reserved.</strong></p>
-    </footer>
+      <p>
+          Join us in our mission!
+      </p>
+    </div>
+
+    <div id="contact">
+        <h2 id="contact">Contact</h2>
+        <p>If you have any questions, please reach us by phone or e-mail:</p>
+        <p><strong>Phone:</strong> +47 00 00 00 Mon-Fri 9 am-3 pm</p>
+        <p><strong>E-mail:</strong> post@onlinegarden.com</p>
+    </div>
+
+    <div id="footer">
+      <footer>
+        <p><strong>The Online Garden Farmer's Market &copy; 2020. All rights reserved.</strong></p>
+      </footer>
+    </div>
   </div>
 
 </body>
