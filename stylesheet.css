@@ -11,19 +11,26 @@ body{
 #header {
     width: 100%;
     height: 350px;
+    background-image: url(img/greens.jpg); 
+    /* Royalty-free image from https://www.pickpik.com/fresh-amp-colorful-fruits-vegetables-apples-79643 */
+    background-size: cover;
     background-color: #92c21e;
     color: whitesmoke;
     position: fixed;
     top: 0;
     z-index: -1;
+    
 }
 #header > h1 {
-    margin: 40px 0px 10px 40px;
+    margin: 40px 20px 10px 40px;
     font-size: 38pt;
+    text-shadow: 3px 3px 2px black;
+    text-decoration: underline;
 }
 #header > h2 {
-    margin: 0px 0px 20px 70px;
+    margin: 0px 20px 20px 70px;
     font-size: 24pt;
+    text-shadow: 2px 2px 2px black;
 }
 
 #navbar {
@@ -191,7 +198,7 @@ body{
     width: 100%;
     background-color: whitesmoke;
     padding-top: 40px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-flow: row wrap;
 }
@@ -203,7 +210,6 @@ body{
     width: 45%;
     margin: 0 auto;
 }
-#content-wrapper_buysell > h1,
 #content-wrapper_buysell > h1 {
     text-align: center;
     margin: 20px auto 0 auto;
@@ -288,6 +294,7 @@ body{
     font-size: 12pt;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
+    min-width: 200px;
 }
 #content-wrapper_buysell > #sell > form > select {
     padding: 4px 6px;
@@ -309,4 +316,167 @@ body{
 }
 #content-wrapper_buysell > #sell > form > input[type="submit"]:active {
     border-color: #7d5026;
+}
+
+#content-wrapper > form {
+    width: 60%;
+    margin: auto;
+    margin-top: 15px;
+}
+#content-wrapper > form > input[type="text"] {
+    padding: 4px 6px;
+    width: 50%;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 200px;
+}
+#content-wrapper > form > input[type="submit"] {
+    padding: 5px 20px;
+    margin: 10px auto;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 3px solid #92c21e;
+}
+#content-wrapper > form > input[type="submit"]:hover {
+    background-color: lightgray;
+}
+#content-wrapper > form > input[type="submit"]:active {
+    border-color: #7d5026;
+}
+
+#content-wrapper > table td a {
+    color: black;
+    text-decoration: none;
+}
+#content-wrapper > table td a:hover {
+    color: #92c21e;
+}
+#content-wrapper > table td a:active {
+    color: #7d5026;
+}
+
+#content-wrapper > p > a {
+    color: #7d5026;
+}
+#content-wrapper > p > a:visited {
+    color: #7d5026;
+}
+#content-wrapper > p > a:hover {
+    color: #64401f;
+}
+#content-wrapper > p > a:active {
+    color: #92c21e;
+}
+
+#content-wrapper_login {
+    width: 100%;
+    background-color: whitesmoke;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+}
+#content-wrapper_login #login,
+#content-wrapper_login #signup {
+    width: 45%;
+    margin: 0 auto;
+}
+#content-wrapper_login > h1 {
+    text-align: center;
+    margin: 20px auto 0 auto;
+    width: 100%;
+}
+#content-wrapper_login > #signup > h2,
+#content-wrapper_login > #login > h2 {
+    text-align: center;
+    margin: 20px auto 0 auto;
+    border-bottom: 3px solid #92c21e;
+    font-size: 20pt;
+}
+#content-wrapper_login > #signup > p,
+#content-wrapper_login > #login > p {
+    margin: 0px auto 10px auto;
+    font-size: 15pt;
+}
+#content-wrapper_login > #signup > form,
+#content-wrapper_login > #login > form  {
+    margin-top: 15px;
+}
+#content-wrapper_login > #signup > form > input[type="text"],
+#content-wrapper_login > #login > form > input[type="text"] {
+    padding: 4px 6px;
+    margin: 0px 5px 15px 0px;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+#content-wrapper_login > #signup > form > input[type="submit"],
+#content-wrapper_login > #login > form > input[type="submit"] {
+    padding: 10px 20px;
+    margin: 10px auto;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 3px solid #92c21e;
+}
+#content-wrapper_login > #signup > form > input[type="submit"]:hover,
+#content-wrapper_login > #login > form > input[type="submit"]:hover {
+    background-color: lightgray;
+}
+#content-wrapper_login > #signup > form > input[type="submit"]:active,
+#content-wrapper_login > #login > form > input[type="submit"]:active {
+    border-color: #7d5026;
+}
+
+
+@media only screen and (max-width: 1080px) {
+    #content-wrapper h1,
+    #content-wrapper h2,
+    #content-wrapper h3,
+    #content-wrapper p,
+    #content-wrapper table,
+    #content-wrapper ol,
+    #content-wrapper #recipes_navbar {
+        width: 90%;
+    }
+    #content-wrapper_buysell #buy,
+    #content-wrapper_buysell #sell,
+    #content-wrapper_login #signup,
+    #content-wrapper_login #login {
+        width: 90%;
+    }
+    
+    #header {
+        height: 400px;
+    }
+
+    #navbar {
+        position: static;
+        font-size: 16pt;
+        margin-top: 400px;
+    }
+    #navbar > ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #navbar > ul > a:link {
+        width: 50%;
+        padding: 5px 0;
+    }
+
+    #about_contact_footer-wrapper > #about {
+        width: 100%;
+    }
+    #about_contact_footer-wrapper > #contact {
+        width: 100%;
+    }
+
+    #header h1,
+    #header h2 {
+        margin: 20px 20px 0 20px;
+    }
 }
