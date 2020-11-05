@@ -118,6 +118,9 @@ body{
 #about_contact_footer-wrapper > #contact {
     width: 50%;
     padding: 25px;
+    text-align: justify;
+}
+#about_contact_footer-wrapper > #about > h2 {
     text-align: center;
 }
 #about_contact_footer-wrapper > #footer {
