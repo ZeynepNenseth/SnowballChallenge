@@ -453,13 +453,13 @@ body{
     }
     
     #header {
-        height: 400px;
+        height: 450px;
     }
 
     #navbar {
         position: static;
         font-size: 16pt;
-        margin-top: 400px;
+        margin-top: 450px;
     }
     #navbar > ul {
         display: flex;
@@ -478,8 +478,16 @@ body{
         width: 100%;
     }
 
-    #header h1,
+    #header h1 {
+        margin: 20px 20px 0 20px;
+        font-size: 34pt;
+    }
     #header h2 {
         margin: 20px 20px 0 20px;
+        font-size: 24pt;
+    }
+    
+    #content-wrapper_buysell #buy table {
+        font-size: 11.5pt;
     }
 }
