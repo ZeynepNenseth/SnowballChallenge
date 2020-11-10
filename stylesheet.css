@@ -451,15 +451,67 @@ body{
     #content-wrapper_login #login {
         width: 90%;
     }
+
+    #content-wrapper p,
+    #about_contact_footer-wrapper #about p,
+    #about_contact_footer-wrapper #contact p,
+    #about_contact_footer-wrapper #footer p,
+    #content-wrapper_buysell #buy p,
+    #content-wrapper_buysell #sell p,
+    #content-wrapper_buysell #sell form,
+    #content-wrapper_login #signup p,
+    #content-wrapper_login #login p,
+    #content-wrappper_login #signup form,
+    #content-wrapper_login #login form,
+    #content-wrapper table,
+    #content-wrapper ol {
+        font-size: 12pt;
+    }
+    #content-wrapper h1,
+    #content-wrapper_buysell h1,
+    #content-wrapper_login h1 {
+        font-size: 20pt;
+    }
+    #content-wrapper h2,
+    #content-wrapper_buysell #buy h2,
+    #content-wrapper_buysell #sell h2,
+    #content-wrapper_login #signup h2,
+    #content-wrapper_login #login h2 {
+        font-size: 16pt;
+    }
+    #content-wrapper h3,
+    #content-wrapper_buysell #buy h3,
+    #content-wrapper_buysell #sell h3,
+    #content-wrapper_login #signup h3,
+    #content-wrapper_login #login h3 {
+        font-size: 14pt;
+    }
+
+    #content-wrapper,
+    #content-wrapper_buysell,
+    #content-wrapper_login {
+        padding-top: 10px;
+    }
+    #content-wrapper #recipes_navbar { 
+        width: 100%;
+        font-size: 12pt;
+    }
+    #content-wrapper #recipes_navbar ul {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #content-wrapper #recipes_navbar ul a:link {
+        width: 50%;
+    }
     
     #header {
-        height: 450px;
+        height: 475px;
     }
 
     #navbar {
         position: static;
-        font-size: 16pt;
-        margin-top: 450px;
+        font-size: 14pt;
+        margin-top: 475px;
     }
     #navbar > ul {
         display: flex;
@@ -480,14 +532,25 @@ body{
 
     #header h1 {
         margin: 20px 20px 0 20px;
-        font-size: 34pt;
+        font-size: 30pt;
     }
     #header h2 {
         margin: 20px 20px 0 20px;
-        font-size: 24pt;
+        font-size: 22pt;
     }
     
     #content-wrapper_buysell #buy table {
-        font-size: 11.5pt;
+        font-size: 10.5pt;
+    }
+    #content-wrapper_buysell #buy p button {
+        font-size: 12pt;
+        padding: 4px 10px;
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #content-wrapper_buysell #buy table {
+        font-size: 9pt;
     }
 }
